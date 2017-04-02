@@ -3,7 +3,7 @@ defmodule Cards do
   Documentation for Cards.
   """
 
-  def hello do
-    "hi there!"
+  def create_deck do
+    ["Ace", "Two", "Three"]
   end
 end
