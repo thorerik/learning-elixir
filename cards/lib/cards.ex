@@ -1,8 +1,10 @@
 defmodule Cards do
   @moduledoc """
-  Documentation for Cards.
+    Provides methods for creating and handling a deck of cards
   """
 
+  @doc """
+  """
   def create_deck do
     values = ["Ace",
       "Two",
@@ -52,6 +54,6 @@ defmodule Cards do
   def create_hand(hand_size) do
     Cards.create_deck
     |> Cards.shuffle
-    |> Cards.deal(hand_size) 
+    |> Cards.deal(hand_size)
   end
 end
