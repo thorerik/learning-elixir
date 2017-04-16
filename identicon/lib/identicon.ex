@@ -21,8 +21,8 @@ defmodule Identicon do
   @doc """
 
   """
-  def mirror_row(row) do
-
+  def mirror_row([first, second | _] = row) do
+    row ++ [second, first]
   end
 
   @doc """
