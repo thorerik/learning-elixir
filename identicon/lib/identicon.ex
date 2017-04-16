@@ -18,7 +18,7 @@ defmodule Identicon do
       iex> imgStruct = Identicon.hash_input("meow")
       iex> imgStruct = Identicon.build_grid(imgStruct)
       iex> Identicon.filter_odd_squares(imgStruct)
-      %Identicon.Image{colour: nil,
+      %Identicon.Image{
       grid: [{74, 0}, {228, 2}, {74, 4}, {12, 5}, {150, 6}, {172, 7}, {150, 8},
       {12, 9}, {20, 11}, {20, 13}, {128, 20}, {166, 22}, {128, 24}],
       hex: [74, 75, 228, 12, 150, 172, 99, 20, 233, 29, 147, 243, 128, 67, 166, 52]}
@@ -38,7 +38,7 @@ defmodule Identicon do
 
       iex> imgStruct = Identicon.hash_input("meow")
       iex> Identicon.build_grid(imgStruct)
-      %Identicon.Image{colour: nil,
+      %Identicon.Image{
       grid: [{74, 0}, {75, 1}, {228, 2}, {75, 3}, {74, 4}, {12, 5}, {150, 6},
       {172, 7}, {150, 8}, {12, 9}, {99, 10}, {20, 11}, {233, 12}, {20, 13},
       {99, 14}, {29, 15}, {147, 16}, {243, 17}, {147, 18}, {29, 19}, {128, 20},
