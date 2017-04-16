@@ -6,6 +6,12 @@ defmodule Identicon do
   def main(input) do
     input
     |> hash_input
+    |> pick_color
+  end
+
+  def pick_color(image) do
+    %Identicon.Image{hex: [r,g,b|_]} = image
+    [r,g,b]
   end
 
   @doc """
@@ -13,7 +19,7 @@ defmodule Identicon do
 
   ## Examples
 
-      iex> Identicon.main("meow")
+      iex> Identicon.hash_input("meow")
       %Identicon.Image{hex: [74, 75, 228, 12, 150, 172, 99, 20, 233, 29, 147, 243,
       128, 67, 166, 52]}
   """
