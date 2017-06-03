@@ -38,8 +38,9 @@ defmodule Discuss.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:ueberauth, "~> 0.4"},
-     {:ueberauth_github, "~> 0.4"}]
+     {:ueberauth, "~> 0.3"},
+     {:ueberauth_github, "~> 0.4"},
+     {:hackney, "1.6.1", override: true}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
