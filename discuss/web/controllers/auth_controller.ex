@@ -8,6 +8,10 @@ defmodule Discuss.Authcontroller do
     user_params = %{token: auth.credentials.token, email: auth.info.email, provider: "github"}
     changeset = User.changeset(%User{}, user_params)
 
+    signin(conn, changeset)
+  end
+
+  defp signin(conn, changeset) do
     insert_or_update_user(changeset)
   end
 
